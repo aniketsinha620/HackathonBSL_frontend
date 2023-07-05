@@ -36,7 +36,7 @@ export default function Card(props) {
                                     <h1 class="cardtitle">{props ? props.original_title : ""}</h1>
                                     <p class="cardinfo">{props ? props.overview : ""}</p>
 
-                                    <button class="cardbtn">book tour</button>
+                                    <button class="cardbtn">book tours</button>
                                 </div>
                             </div>
                         </div>
