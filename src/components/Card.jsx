@@ -2,10 +2,16 @@ import React, { useState, useEffect } from 'react'
 import Skeleton, { SkeletonTheme } from 'react-loading-skeleton'
 import "./Card.css"
 import { Link } from 'react-router-dom'
+import Aos from "aos"
+import 'aos/dist/aos.css'
+
+
 
 export default function Card(props) {
     const [loading, setLoading] = useState(true)
-
+    useEffect(() => {
+        Aos.init()
+    }, [])
 
     useEffect(() => {
         setTimeout(() => {
@@ -13,7 +19,7 @@ export default function Card(props) {
         }, 1500)
     }, [])
     return (
-        <div>
+        <div data-aos="fade-right">
             {
                 loading ?
 

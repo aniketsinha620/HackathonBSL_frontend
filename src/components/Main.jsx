@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+
 import "./Main.css"
 import { useParams } from 'react-router-dom'
 import Card from './Card'
@@ -24,11 +25,15 @@ export default function Main() {
         getapi()
     }, [type])
 
+  
 
 
 
     return (
         <div className='movie-list'>
+           
+
+
             <h2 className="list-title">{(type ? type : "Popular").toUpperCase()}</h2>
 
             <div className="list-card">
@@ -38,6 +43,8 @@ export default function Main() {
                         < Card {...ele} />)
 
                 })}
+
+
             </div>
         </div>
     )

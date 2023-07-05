@@ -5,6 +5,8 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import { Link } from "react-router-dom";
 import Main from "./Main";
+import Navbar from "./Navbar";
+import StarIcon from '@mui/icons-material/Star';
 
 
 const Home = () => {
@@ -20,6 +22,7 @@ const Home = () => {
 
     return (
         <>
+        
             <div className="poster">
                 <Carousel
                     showThumbs={false}
@@ -45,7 +48,7 @@ const Home = () => {
                                         {movie ? movie.release_date : ""}
                                         <span className="posterImage__rating">
                                             {movie ? movie.vote_average : ""}
-                                            <i className="fas fa-star" />{" "}
+                                            <StarIcon />{" "}
                                         </span>
                                     </div>
                                     <div className="posterImage__description">{movie ? movie.overview : ""}</div>

@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink ,Link} from 'react-router-dom'
+import { NavLink, Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
@@ -34,8 +34,8 @@ export default function Navbar() {
 
                 <div className="media1">
                     <button>
-                        <Link  to="/signup">Signup</Link>
-                        </button>
+                        <Link style={{ textDecoration: "none", color: "black" }} to="/signup">Signup</Link>
+                    </button>
 
                 </div>
 
@@ -58,7 +58,7 @@ export default function Navbar() {
 
                     <div className="media">
                         <button>
-                        <Link to="/signup">Signup</Link>
+                            <Link style={{ textDecoration: "none", color: "black" }} to="/signup">Signup</Link>
                         </button>
 
                     </div>
