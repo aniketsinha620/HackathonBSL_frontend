@@ -64,14 +64,17 @@
     margin-left: 30px;
     color: black;
     font-weight: 800;
-    background-color: #ffb700;
+    /* background-color: #ffb700; */
+    background-color: red;
     border: none;
     height: 40px;
     width: 80px;
     border-radius: 5px;
 }
 
-
+.media button{
+    background-color: blue;
+}
 
 .navItems1 {
     height: 10vh;
@@ -149,6 +152,7 @@
     color: black;
     font-weight: 800;
     background-color: #ffb700;
+   
     border: none;
     height: 30px;
     width: 70px;

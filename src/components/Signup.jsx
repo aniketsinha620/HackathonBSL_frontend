@@ -13,33 +13,33 @@ function Login() {
     async function submit(e) {
         e.preventDefault();
 
-        try {
+        // try {
 
-            await axios.post("http://localhost:8000/signup", {
-                email, password, name
-            })
-                .then(res => {
+        //     await axios.post("http://localhost:8000/signup", {
+        //         email, password, name
+        //     })
+        //         .then(res => {
 
-                    if (res.data == "exist") {
-                        alert("User already exists")
-                    }
-                    else if (res.data == "notexist") {
-                        history("/home", { state: { id: email } })
-                    }
-                    else {
-                        alert("fill the following data")
-                    }
-                })
-                .catch(e => {
-                    alert("wrong details")
-                    console.log(e);
-                })
+        //             if (res.data == "exist") {
+        //                 alert("User already exists")
+        //             }
+        //             else if (res.data == "notexist") {
+        //                 history("/home", { state: { id: email } })
+        //             }
+        //             else {
+        //                 alert("fill the following data")
+        //             }
+        //         })
+        //         .catch(e => {
+        //             alert("wrong details")
+        //             console.log(e);
+        //         })
 
-        }
-        catch (e) {
-            console.log(e);
+        // }
+        // catch (e) {
+        //     console.log(e);
 
-        }
+        // }
 
     }
 
